@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Colonia Bufalera — Carne de Búfalo Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a href="#" class="nav-logo">La Colonia Bufalera</a>
+  <ul class="nav-links">
+    <li><a href="#historia">Historia</a></li>
+    <li><a href="#valores">Nosotros</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Carne de Búfalo Premium</div>
+    <h1 class="hero-title">La<br>Colonia<br><em>Búfalera</em></h1>
+    <p class="hero-sub">Del campo a tu mesa — calidad artesanal, tradición mojanera sucreña.</p>
+    <div class="hero-stars">★ ★ ★</div>
+    <a href="#productos" class="btn-primary">Ver Productos</a>
+  </div>
+  <div class="hero-right">
+    <img src="/imagenes/imgs-000.png" alt="Búfalos en el campo"/>
+    <div class="hero-badge">🐃 Criados<br>a pasto<br>100% natural</div>
+  </div>
+</section>
+
+<!-- ─── HISTORIA ─── -->
+<section id="historia">
+  <div class="historia-img">
+    <img src="/imagenes/imgs-003.png" alt="Carne de búfalo artesanal"/>
+  </div>
+  <div class="historia-texto">
+    <div class="section-label">Nuestra Historia</div>
+    <h2 class="serif">Una respuesta<br>a la necesidad</h2>
+    <p>
+      La Colonia nace como respuesta a la necesidad de mejorar la imagen y valoración
+      de la carne de búfalo, un producto históricamente subestimado. Hoy nos destacamos
+      por sus beneficios para la salud, su escasez en el mercado, y las oportunidades
+      que genera en el sector ganadero.
+    </p>
+  </div>
+</section>
+
+<!-- ─── VALORES ─── -->
+<section id="valores">
+  <div class="valores-header">
+    <div class="section-label">¿Por qué elegirnos?</div>
+    <h2 class="serif">Calidad, Tradición<br>y Bienestar</h2>
+  </div>
+  <div class="valores-grid">
+    <div class="valor-card">
+      <div class="valor-icon">🌿</div>
+      <h3>100% Natural</h3>
+      <p>Animales seleccionados, criados exclusivamente a pasto, sin conservantes ni preservativos en ninguno de nuestros productos.</p>
+    </div>
+    <div class="valor-card">
+      <div class="valor-icon">🤲</div>
+      <h3>Artesanal</h3>
+      <p>Procesos artesanales que respetan la tradición mojanera sucreña, garantizando autenticidad en cada corte y queso.</p>
+    </div>
+    <div class="valor-card">
+      <div class="valor-icon">✅</div>
+      <h3>Certificado</h3>
+      <p>Todos los procesos de nuestras carnes están certificados, asegurando los más altos estándares de calidad e inocuidad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRODUCTOS ─── -->
+<section id="productos">
+  <div class="productos-header">
+    <div>
+      <div class="section-label">Lo que ofrecemos</div>
+      <h2 class="serif">Nuestros Productos</h2>
+    </div>
+    <div class="categoria-tabs">
+      <button class="tab-btn active" onclick="showTab('carnes', this)">Carnes</button>
+      <button class="tab-btn" onclick="showTab('lacteos', this)">Lácteos</button>
+    </div>
+  </div>
+
+  <!-- CARNES -->
+  <div class="categoria-panel active" id="tab-carnes">
+    <div class="productos-grid">
+      <div class="producto-card">
+        <div class="prod-num">01</div>
+        <div class="prod-name">Mozzarella Caja x4</div>
+        <div class="prod-peso">500 gr · 4 unidades</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">02</div>
+        <div class="prod-name">Mozzarella Caja x8</div>
+        <div class="prod-peso">1.000 gr · 8 unidades</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">03</div>
+        <div class="prod-name">Corte Tomahawk
+          <img src="/imagenes/imgs-019.png" width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">Pieza entre 600 y 800 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">04</div>
+        <div class="prod-name">T-Bone Steak</div>
+        <div class="prod-peso">Paquete 800–900 gr · 2 unidades (400–450 gr c/u)</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">05</div>
+        <div class="prod-name">Asado de Tira</div>
+        <div class="prod-peso">Paquete entre 900 y 1.200 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">06</div>
+        <div class="prod-name">New York Steak</div>
+        <div class="prod-peso">600–700 gr · 2 piezas de 300–350 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">07</div>
+        <div class="prod-name">Rib Eye</div>
+        <div class="prod-peso">900–1.100 gr · 3 porciones de 330–370 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">08</div>
+        <div class="prod-name">Costilla Gourmet</div>
+        <div class="prod-peso">Paquete entre 1.500 y 2.000 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">09</div>
+        <div class="prod-name">Picaña Corte Entero
+          <img src="/imagenes/imgs-035.png" width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">Entre 1.200 y 1.800 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">10</div>
+        <div class="prod-name">Chorizo de Búfalo
+          <img src="/imagenes/chorizo.png" width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">100% carne magra · Paquete x5 · ~500 gr</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LÁCTEOS -->
+  <div class="categoria-panel" id="tab-lacteos">
+    <div class="lacteos-grid">
+      <div class="producto-card">
+        <div class="prod-num">01</div>
+        <div class="prod-name">Queso Semibland</div>
+        <div class="prod-peso">500 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">02</div>
+        <div class="prod-name">Mozzarella Búfala Bloque
+          <img src="/imagenes/imgs-042.png " width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">2.500 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">03</div>
+        <div class="prod-name">Mozzarella Tajado
+          <img src="/imagenes/imgs-043.png"   width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">500 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">04</div>
+        <div class="prod-name">Mozzarella Entero
+          <img src="/imagenes/imgs-044.png"   width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">500 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">05</div>
+        <div class="prod-name">Yogurt Griego</div>
+        <div class="prod-peso">900 gr</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">06</div>
+        <div class="prod-name">Yogurt Griego Institucional
+          <img src=""  width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">5.000 kg</div>
+      </div>
+      <div class="producto-card">
+        <div class="prod-num">07</div>
+        <div class="prod-name">Yogurt Griego Personal
+          <img src="/imagenes/imgs-045.png" width="200" height="200" alt="">
+        </div>
+        <div class="prod-peso">450 gr · 200 gr</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROPÓSITO ─── -->
+<section id="proposito">
+  <div>
+    <div class="section-label" style="color:var(--dorado);">
+      <span style="display:inline-block;width:2rem;height:1px;background:var(--dorado);"></span>
+      Propósito
+    </div>
+    <h2 class="serif" style="color:var(--crema);">Del campo<br><em style="font-style:italic;">a tu mesa</em></h2>
+  </div>
+  <div>
+    <p>
+      La Colonia se fundamenta en la seguridad y en abordar los problemas que
+      impactan al campo colombiano. Nos preocupamos por el contexto climático,
+      político y económico, buscando siempre la mejora continua para nuestros
+      productores y consumidores.
+    </p>
+    <div class="proposito-detail">
+      <div class="detail-item">
+        <strong>100%</strong>
+        <span>A pasto</span>
+      </div>
+      <div class="detail-item">
+        <strong>0</strong>
+        <span>Conservantes</span>
+      </div>
+      <div class="detail-item">
+        <strong>✓</strong>
+        <span>Certificados</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACTO ─── -->
+<section id="contacto">
+  <div class="contacto-left">
+    <div class="section-label">Contáctanos</div>
+    <h2 class="serif">Hablemos de<br>calidad</h2>
+    <p>
+      ¿Interesado en nuestros productos? Escríbenos o llámanos.
+      Con gusto te atendemos y te explicamos todo sobre nuestra
+      carne y quesos artesanales de búfalo.
+    </p>
+    <div class="contacto-info">
+      <a href="https://www.instagram.com/lacoloniabufalera" target="_blank">
+        <div class="contact-icon">📸</div>
+        @lacoloniabufalera
+      </a>
+      <a href="tel:3104252157">
+        <div class="contact-icon">📞</div>
+        310 425 2157
+      </a>
+    </div>
+  </div>
+  <div class="contacto-right">
+    <h3>Envíanos un mensaje</h3>
+    <div class="field">
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre completo"/>
+    </div>
+    <div class="field">
+      <label>Teléfono / WhatsApp</label>
+      <input type="tel" placeholder="300 000 0000"/>
+    </div>
+    <div class="field">
+      <label>Mensaje</label>
+      <textarea placeholder="¿Qué producto te interesa?"></textarea>
+    </div>
+    <button class="btn-primary" onclick="enviarWA()" style="width:100%;text-align:center;">Enviar por WhatsApp</button>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-brand">La Colonia Bufalera</div>
+  <div>★ Carne de Búfalo Seleccionada Premium ★</div>
+  <div>IG: <a href="https://www.instagram.com/lacoloniabufalera" target="_blank">@lacoloniabufalera</a></div>
+</footer>
+
+<script>
+  function showTab(cat, btn) {
+    document.querySelectorAll('.categoria-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + cat).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  function enviarWA() {
+    const nombre = document.querySelector('input[placeholder="Tu nombre completo"]').value;
+    const tel    = document.querySelector('input[placeholder="300 000 0000"]').value;
+    const msg    = document.querySelector('textarea').value;
+    const texto  = `Hola La Colonia Bufalera! Mi nombre es ${nombre}, tel: ${tel}. ${msg}`;
+    window.open('https://wa.me/573104252157?text=' + encodeURIComponent(texto), '_blank');
+  }
+</script>
+</body>
+</html>
